@@ -1,0 +1,7 @@
+Google Benchmark
+
+Shall be cloned from https://github.com/google/benchmark.git to ext/google-benchmark.
+
+Google Test
+
+Shall be cloned from https://github.com/google/googletest.git to ext/googletest.
