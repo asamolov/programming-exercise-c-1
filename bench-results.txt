@@ -1,0 +1,38 @@
+Benchmark results.
+
+Items/s - number of processed dirs in path per second.
+MB/s - speed of processing, in MB/s of source path.
+
+You can run it yourself, by building and starting ./cmake-build-release/bench
+
+Run on MacBook Air 2013.
+
+Run on (4 X 1300 MHz CPU s)
+2017-02-23 03:26:02
+Benchmark                              Time           CPU Iterations
+--------------------------------------------------------------------
+BM_Normalize                         135 ns        134 ns    5439174
+BM_Normalize_Buf_Multiple            295 ns        294 ns    2414084   32.4124M items/s
+BM_Normalize_Buf_Single               26 ns         26 ns   25311970   37.1617M items/s
+BM_Normalize_Buf_N_Tokens/1           27 ns         27 ns   27628998   250.346MB/s   35.7638M items/s
+BM_Normalize_Buf_N_Tokens/11         227 ns        226 ns    3155314   282.713MB/s   46.4156M items/s
+BM_Normalize_Buf_N_Tokens/21         441 ns        440 ns    1639252   275.438MB/s   45.5448M items/s
+BM_Normalize_Buf_N_Tokens/31         614 ns        609 ns    1066455   292.933MB/s   48.5611M items/s
+BM_Normalize_Buf_N_Tokens/41         852 ns        843 ns     919033   279.527MB/s   46.3992M items/s
+BM_Normalize_Buf_N_Tokens/51        1002 ns        997 ns     705795   293.693MB/s   48.7893M items/s
+BM_Normalize_Buf_N_Tokens/61        1216 ns       1211 ns     589112   289.095MB/s   48.0512M items/s
+BM_Normalize_Buf_N_Tokens/71        1398 ns       1381 ns     547911   294.847MB/s   49.0261M items/s
+BM_Normalize_Buf_N_Tokens/81        1553 ns       1549 ns     433182   299.822MB/s   49.8678M items/s
+BM_Normalize_Buf_N_Tokens/91        1779 ns       1769 ns     400841   294.897MB/s   49.0597M items/s
+BM_Normalize_Buf_N_Tokens/101       1971 ns       1960 ns     369858   295.401MB/s   49.1524M items/s
+BM_Normalize_Buf_Dir_Size/1           72 ns         72 ns    9224241   146.691MB/s   66.6776M items/s
+BM_Normalize_Buf_Dir_Size/6          100 ns         99 ns    6835937    345.29MB/s   47.9569M items/s
+BM_Normalize_Buf_Dir_Size/11         101 ns        101 ns    7151980    578.84MB/s   47.4459M items/s
+BM_Normalize_Buf_Dir_Size/16         144 ns        144 ns    5263079   570.901MB/s   33.1919M items/s
+BM_Normalize_Buf_Dir_Size/21         175 ns        174 ns    3879083   608.795MB/s   27.4232M items/s
+BM_Normalize_Buf_Dir_Size/26         196 ns        195 ns    3529649   665.593MB/s   24.4703M items/s
+BM_Normalize_Buf_Dir_Size/31         213 ns        212 ns    3318385   722.872MB/s   22.4494M items/s
+BM_Normalize_Buf_Dir_Size/36         259 ns        258 ns    2709796   686.469MB/s   18.4535M items/s
+BM_Normalize_Buf_Dir_Size/41         278 ns        271 ns    2644164   743.444MB/s   17.6172M items/s
+BM_Normalize_Buf_Dir_Size/46         295 ns        294 ns    2118317   766.702MB/s   16.2437M items/s
+BM_Normalize_Buf_Dir_Size/51         379 ns        377 ns    1766758   659.748MB/s   12.6388M items/s
