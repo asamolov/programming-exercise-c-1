@@ -8,31 +8,32 @@ You can run it yourself, by building and starting ./cmake-build-release/bench
 Run on MacBook Air 2013.
 
 Run on (4 X 1300 MHz CPU s)
-2017-02-23 03:26:02
+2017-02-25 17:07:30
 Benchmark                              Time           CPU Iterations
 --------------------------------------------------------------------
-BM_Normalize                         135 ns        134 ns    5439174
-BM_Normalize_Buf_Multiple            295 ns        294 ns    2414084   32.4124M items/s
-BM_Normalize_Buf_Single               26 ns         26 ns   25311970   37.1617M items/s
-BM_Normalize_Buf_N_Tokens/1           27 ns         27 ns   27628998   250.346MB/s   35.7638M items/s
-BM_Normalize_Buf_N_Tokens/11         227 ns        226 ns    3155314   282.713MB/s   46.4156M items/s
-BM_Normalize_Buf_N_Tokens/21         441 ns        440 ns    1639252   275.438MB/s   45.5448M items/s
-BM_Normalize_Buf_N_Tokens/31         614 ns        609 ns    1066455   292.933MB/s   48.5611M items/s
-BM_Normalize_Buf_N_Tokens/41         852 ns        843 ns     919033   279.527MB/s   46.3992M items/s
-BM_Normalize_Buf_N_Tokens/51        1002 ns        997 ns     705795   293.693MB/s   48.7893M items/s
-BM_Normalize_Buf_N_Tokens/61        1216 ns       1211 ns     589112   289.095MB/s   48.0512M items/s
-BM_Normalize_Buf_N_Tokens/71        1398 ns       1381 ns     547911   294.847MB/s   49.0261M items/s
-BM_Normalize_Buf_N_Tokens/81        1553 ns       1549 ns     433182   299.822MB/s   49.8678M items/s
-BM_Normalize_Buf_N_Tokens/91        1779 ns       1769 ns     400841   294.897MB/s   49.0597M items/s
-BM_Normalize_Buf_N_Tokens/101       1971 ns       1960 ns     369858   295.401MB/s   49.1524M items/s
-BM_Normalize_Buf_Dir_Size/1           72 ns         72 ns    9224241   146.691MB/s   66.6776M items/s
-BM_Normalize_Buf_Dir_Size/6          100 ns         99 ns    6835937    345.29MB/s   47.9569M items/s
-BM_Normalize_Buf_Dir_Size/11         101 ns        101 ns    7151980    578.84MB/s   47.4459M items/s
-BM_Normalize_Buf_Dir_Size/16         144 ns        144 ns    5263079   570.901MB/s   33.1919M items/s
-BM_Normalize_Buf_Dir_Size/21         175 ns        174 ns    3879083   608.795MB/s   27.4232M items/s
-BM_Normalize_Buf_Dir_Size/26         196 ns        195 ns    3529649   665.593MB/s   24.4703M items/s
-BM_Normalize_Buf_Dir_Size/31         213 ns        212 ns    3318385   722.872MB/s   22.4494M items/s
-BM_Normalize_Buf_Dir_Size/36         259 ns        258 ns    2709796   686.469MB/s   18.4535M items/s
-BM_Normalize_Buf_Dir_Size/41         278 ns        271 ns    2644164   743.444MB/s   17.6172M items/s
-BM_Normalize_Buf_Dir_Size/46         295 ns        294 ns    2118317   766.702MB/s   16.2437M items/s
-BM_Normalize_Buf_Dir_Size/51         379 ns        377 ns    1766758   659.748MB/s   12.6388M items/s
+BM_Normalize                         118 ns        118 ns    5936480
+BM_Normalize_Buf_Multiple            267 ns        267 ns    2551690   35.6994M items/s
+BM_Normalize_Buf_Single               24 ns         24 ns   30618895   40.4274M items/s
+BM_Normalize_Buf_N_Tokens/1           23 ns         23 ns   29538482   291.812MB/s   41.6874M items/s
+BM_Normalize_Buf_N_Tokens/11         199 ns        199 ns    3456466   320.968MB/s   52.6962M items/s
+BM_Normalize_Buf_N_Tokens/21         379 ns        379 ns    1849259   319.444MB/s   52.8215M items/s
+BM_Normalize_Buf_N_Tokens/31         555 ns        554 ns    1293613     321.7MB/s     53.33M items/s
+BM_Normalize_Buf_N_Tokens/41         748 ns        747 ns     875241   315.197MB/s   52.3202M items/s
+BM_Normalize_Buf_N_Tokens/51         930 ns        930 ns     771511   314.805MB/s   52.2965M items/s
+BM_Normalize_Buf_N_Tokens/61        1117 ns       1115 ns     627010    313.88MB/s   52.1708M items/s
+BM_Normalize_Buf_N_Tokens/71        1258 ns       1258 ns     527363    323.81MB/s    53.842M items/s
+BM_Normalize_Buf_N_Tokens/81        1393 ns       1393 ns     453609   333.433MB/s   55.4581M items/s
+BM_Normalize_Buf_N_Tokens/91        1551 ns       1550 ns     410427   336.593MB/s   55.9962M items/s
+BM_Normalize_Buf_N_Tokens/101       1933 ns       1931 ns     394464    299.75MB/s    49.876M items/s
+BM_Normalize_Buf_Dir_Size/1           67 ns         67 ns    9830908   155.812MB/s   70.8235M items/s
+BM_Normalize_Buf_Dir_Size/6           90 ns         90 ns    7508877   382.658MB/s   53.1469M items/s
+BM_Normalize_Buf_Dir_Size/11          88 ns         88 ns    7715454   660.774MB/s   54.1618M items/s
+BM_Normalize_Buf_Dir_Size/16         122 ns        122 ns    5246629   672.126MB/s   39.0771M items/s
+BM_Normalize_Buf_Dir_Size/21         160 ns        160 ns    4151248   662.299MB/s   29.8333M items/s
+BM_Normalize_Buf_Dir_Size/26         183 ns        183 ns    3743896   707.967MB/s   26.0282M items/s
+BM_Normalize_Buf_Dir_Size/31         207 ns        207 ns    3480423   740.519MB/s   22.9975M items/s
+BM_Normalize_Buf_Dir_Size/36         232 ns        232 ns    2900581   765.175MB/s   20.5692M items/s
+BM_Normalize_Buf_Dir_Size/41         248 ns        247 ns    2858671    814.78MB/s   19.3076M items/s
+BM_Normalize_Buf_Dir_Size/46         283 ns        282 ns    2393874   797.761MB/s   16.9017M items/s
+BM_Normalize_Buf_Dir_Size/51         345 ns        345 ns    2009300    722.19MB/s    13.835M items/s
+
