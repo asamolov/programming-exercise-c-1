@@ -12,6 +12,8 @@ TEST(NormalizePath, BasicPath) {
     char *output = normalize(input);
 
     ASSERT_STREQ(expected, output);
+
+    free(output);
 }
 
 TEST(NormalizePath, EmptyPath) {
@@ -19,6 +21,7 @@ TEST(NormalizePath, EmptyPath) {
     const char *expected = "/";
     char *output = normalize(input);
     ASSERT_STREQ(expected, output);
+    free(output);
 }
 
 TEST(NormalizePath, RelPath) {
@@ -26,6 +29,7 @@ TEST(NormalizePath, RelPath) {
     const char *expected = "/def";
     char *output = normalize(input);
     ASSERT_STREQ(expected, output);
+    free(output);
 }
 
 struct _test_data {
@@ -59,5 +63,6 @@ TEST(NormalizePath, MultiPath) {
         const char *expected = data[i].output;
         char *output = normalize(input);
         EXPECT_STREQ(expected, output);
+        free(output);
     }
 }

@@ -178,7 +178,7 @@ size_t normalize_path_buf(const char *path, char *dst) {
 
 char *normalize(const char *path) {
     size_t n = strlen(path);
-    char *result = malloc(n);
+    char *result = malloc(n + 2);
     size_t sz = normalize_path_buf(path, result);
     assert(sz == strlen(result));
     return result;
