@@ -37,3 +37,9 @@ BM_Normalize_Buf_Dir_Size/41         248 ns        247 ns    2858671    814.78MB
 BM_Normalize_Buf_Dir_Size/46         283 ns        282 ns    2393874   797.761MB/s   16.9017M items/s
 BM_Normalize_Buf_Dir_Size/51         345 ns        345 ns    2009300    722.19MB/s    13.835M items/s
 
+Java results can be obtained in java/result-*.csv.
+
+Items/s: 22 ± 1.5 Mitems/s
+Ops len: 45.7 ± 2.9 ns/op
+
+This is 2x less than compatible BM_Normalize_Buf_N_Tokens/1 C benchmark.
