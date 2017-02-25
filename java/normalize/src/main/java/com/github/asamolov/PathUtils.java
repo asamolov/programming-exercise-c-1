@@ -92,7 +92,7 @@ public class PathUtils {
     public static void normalize(String path, StringBuilder sb) {
         TokenizeResult token;
         int idx = 0;
-        int curr = 0;
+
         sb.append('/');
         do {
             token = tokenize(path, idx);
@@ -122,7 +122,7 @@ public class PathUtils {
                 case TokEnd:
                     break;
             }
-            _print_tok(token, idx, sb);
+            //_print_tok(token, idx, sb);
             idx += token.len;
         } while (token.token != Token.TokEnd);
     }

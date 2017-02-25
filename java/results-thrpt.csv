@@ -1,0 +1,5 @@
+"Benchmark","Mode","Threads","Samples","Score","Score Error (99.9%)","Unit"
+"com.github.asamolov.NormalizeBenchmark.baseline","thrpt",1,5,52580351.307838,795875.683988,"ops/s"
+"com.github.asamolov.NormalizeBenchmark.nop","thrpt",1,5,2154949161.062793,156832141.774408,"ops/s"
+"com.github.asamolov.NormalizeBenchmark.simple","thrpt",1,5,14653095.559424,697338.712167,"ops/s"
+"com.github.asamolov.NormalizeBenchmark.simple_buf","thrpt",1,5,22091291.231243,1510814.727715,"ops/s"

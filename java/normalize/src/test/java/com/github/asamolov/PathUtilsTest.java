@@ -51,6 +51,13 @@ public class PathUtilsTest {
         assertEquals(expected, PathUtils.normalize(input));
     }
     @Test
+    public void noroot() throws Exception {
+        String input = "a";
+        String expected = "/a";
+
+        assertEquals(expected, PathUtils.normalize(input));
+    }
+    @Test
     public void multi() throws Exception {
         for (String[] d : data) {
             String input = d[0];

@@ -7,6 +7,13 @@
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
+  <parent>
+    <groupId>com.github.asamolov</groupId>
+    <artifactId>normalize-root</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <relativePath>..</relativePath>
+  </parent>
+
   <name>normalize</name>
   <url>http://maven.apache.org</url>
 
