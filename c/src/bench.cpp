@@ -73,7 +73,7 @@ static void BM_Normalize_Buf_N_Tokens(benchmark::State &state) {
     for (int i = 0; i < n; i++) {
         memcpy(src + i*len, p, len);
     }
-    src[n*len + 1] = '\0';
+    src[n*len] = '\0';
 
     while (state.KeepRunning()) {
         normalize_path_buf(src, buf);
@@ -100,7 +100,7 @@ static void BM_Normalize_Buf_Dir_Size(benchmark::State &state) {
         src[i*len] = '/';
         memset(src + i*len + 1, 'a', token_size);
     }
-    src[n*len + 1] = '\0';
+    src[n*len] = '\0';
 
     while (state.KeepRunning()) {
         normalize_path_buf(src, buf);
