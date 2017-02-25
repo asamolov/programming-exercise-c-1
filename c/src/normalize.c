@@ -5,7 +5,7 @@
 #include "normalize.h"
 #include <string.h>
 #include <stdlib.h>
-#include <printf.h>
+#include <stdio.h>
 #include <assert.h>
 
 typedef enum _Token {
