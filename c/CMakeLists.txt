@@ -17,5 +17,9 @@ add_executable(normalize_path src/main.c ${SOURCE_FILES})
 add_executable(bench src/bench.cpp ${SOURCE_FILES})
 target_link_libraries(bench benchmark)
 
+add_executable(bench_prefetch src/bench.cpp ${SOURCE_FILES})
+target_compile_definitions(bench_prefetch PRIVATE PREFETCH)
+target_link_libraries(bench_prefetch benchmark)
+
 add_executable(mytests src/test.cpp ${SOURCE_FILES})
 target_link_libraries(mytests gtest_main)

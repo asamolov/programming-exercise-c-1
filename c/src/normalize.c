@@ -123,7 +123,12 @@ size_t normalize_path_buf(const char *path, char *dst) {
     size_t tok_size = 0;
     char *curr = dst;
     *curr = '/';
+
     do {
+#ifdef PREFETCH
+        __builtin_prefetch(p+32, 0, 3);
+        __builtin_prefetch(curr+32, 1, 3);
+#endif
         token = tokenize(p, &tok_size);
 
         switch (token) {
